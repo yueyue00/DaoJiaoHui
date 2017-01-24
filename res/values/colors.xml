@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 会议日程背景颜色 -->
+    <color name="beijing">#eeedf2</color>
+    <!-- 会议日程颜色1 红色 -->
+    <color name="hong">#ff6917</color>
+    <!-- 会议日程颜色2 橙色 -->
+    <color name="cheng">#f8b551</color>
+    <!-- 会议日程颜色3 绿色 -->
+    <color name="lv">#7d9f33</color>
+    <!-- Title部分蓝色 -->
+    <color name="btn_qhs">#F3F2F1</color>
+    <color name="btn_gray">#F8F8F8</color>
+    <color name="nav_gray">#acadb2</color>
+    <color name="line_gray">#e7e8ed</color>
+    <color name="red_dh">#FF0000</color>
+    <color name="red_xiaohui">#F75D00</color>
+    <color name="red_click">#009900</color>
+    <color name="touming">#00000000</color>
+    <!-- <color name="title">#3b77e3</color> -->
+    <color name="title">#99FFFFFF</color>
+    <color name="app_backgroud">#F8F8F8</color>
+    <color name="white">#ffffff</color>
+    <color name="huise">#757677</color>
+    <color name="black">#000000</color>
+    <color name="ablack">#80000000</color>
+    <color name="text_gray">#c4c4c4</color>
+    <color name="text_red">#FF6B5D</color>
+    <color name="text_blue">#0076E1</color>
+    <color name="app_red">#F85959</color>
+    <color name="agray">#e7e8ed</color>
+    <color name="newlist">#EEEEEE</color>
+    <color name="attention">#CCCCCC</color>
+    <color name="xiaoxizhongxinrecyclerviewdivider">#eeedf2</color>
+    <color name="shineidingweichangguanlistdivider">#00000000 </color>
+
+    <!-- 主界面背景颜色 -->
+    <color name="mainbeijing">#EEEEEE</color>
+    <color name="imageselectorforchoseshineimapradiobuttoncheck">#4074C3</color>
+    <color name="imageselectorforchoseshineimapradiobuttonuncheck">#FFFFFF</color>
+    <color name="loginshuzi">#727373</color>
+    <color name="login_et">#A9A9A9</color>
+    <color name="yanzhengma">#366AB9</color>
+    <color name="wuzhen_login">#366AB9</color>
+    <color name="swiperefreshlayoutcolor">#4074C3</color>
+    <color name="zuijinsousuo">#686868</color>
+    <color name="zhujiangren">#FF6917</color>
+    <color name="zhiweijieshao">#4074C3</color>
+    <color name="share_no">#A4A4A4</color>
+    <color name="share_text">#D4D4D4</color>
+    <color name="text_details">#686868</color>
+    <color name="text_title">#1a1a1a</color>
+    <color name="mainactivitybg">#F4F4F4</color>
+    <color name="chosefloor">#ff6917</color>
+    <color name="searchhuiyirvfengexian">#b4b4b4</color>
+
+    <!-- sharesdk s -->
+    <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    <!-- sharesdk e -->
+    <!-- 嘉宾信息 文字颜色 -->
+    <color name="light_blue">#6593cb</color>
+
+    <!-- 嘉宾信息 文字颜色 -->
+    <color name="line_color">#efefef</color>
+    <color name="left_txt">#5a5a65</color>
+    <color name="right_color">#92949b</color>
+    <color name="vip_text_color">#686768</color>
+    <color name="exhibit_introduce">#92949b</color>
+    <color name="cultural_location_color">#f99730</color>
+    <color name="cultural_white">#ffffff</color>
+    <color name="vip_base">#fec95d</color>
+    <!-- 个人签到 字体颜色 -->
+    <color name="sign_textDate">#92949b</color>
+    <color name="sign_textName">#4d5362</color>
+    <!-- 关注颜色切换 -->
+    <color name="guanzhu">#609EFB</color>
+    <color name="guanzhu1">#717172</color>
+    <color name="zhanshang">#1A2947</color>
+    <color name="tongguo">#5A9EFF</color>
+
+    <!-- 个人页面背景 -->
+    <color name="login_background">#364C75 </color>
+    <color name="loadingbg">#84000000</color>
+    <!-- 详情内容 -->
+    <color name="neirong">#717172</color>
+    <!-- 时间 -->
+    <color name="time">#609EFB</color>
+    <!-- 分割线 -->
+    <color name="view">#C8C7CC</color>
+    <!-- 竖分割线 -->
+    <color name="shu_view">#363C44</color>
+    <!-- 展商标题颜色 -->
+    <color name="zhanshang_title">#2A2D2E</color>
+    <!-- 审核未通过 -->
+    <color name="shenhe_unpass">#E7001C</color>
+    <!-- 首页底部导航字体颜色 -->
+    <color name="home_bottom_text_color_nor">#ffffff</color>
+    <color name="home_bottom_text_color_sel">#609EFB</color>
+    <!-- 通用ActionBar背景色 -->
+    <color name="costom_bar_bg">#384C67</color>
+
+    <!-- 亮点推荐中字体的颜色 -->
+    <color name="liangdian_title_color_nor">#717172</color>
+    <color name="liangdian_title_color_sel">#609EFB</color>
+    <!-- 列表点击效果 -->
+    <color name="item_bg_nor">#ffffff</color>
+    <color name="item_bg_sel">#f4f4f4</color>
+    <!-- 登录字体颜色 -->
+    <color name="login_title_sel">#ffffff</color>
+    <color name="login_title_nor">#637186</color>
+    <color name="mine_bg">#ffffff</color>
+    <color name="mine_bg_selected">#d9d9d9</color>
+    <color name="main_blue_light">#3F56B5</color>
+    <color name="main_blue_dark">#30459E</color>
+    <color name="main_black_grey">#6D6D6D</color>
+    <!-- 注销 -->
+    <color name="zhuxiao">#E7001C</color>
+    <!-- 大会导航颜色   zyj -->
+    <color name="title_vg_maintype_secelt">#1A2947</color>
+    <color name="title_vg_routetype_secelt">#609EFB</color>
+    <color name="title_vg_routetype">#717172</color>
+    <!-- 嘉宾列表颜色 zyj -->
+    <color name="guest_name">#2A2D2E</color>
+    <color name="guest_workplace">#717172</color>
+    <color name="guest_job">#609EFB</color>
+    <!-- 轮播图start -->
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_forvpi__defaults.xmleground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <!-- 轮播图end -->
+    <color name="gray_color">#808080</color>
+    <!-- 时间选择器 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+</resources>

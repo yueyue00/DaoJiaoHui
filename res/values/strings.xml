@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- zyj添加 -->
+    <string name="no_read_message">"···"</string>
+    <string name="app_name">高交会</string>
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+
+    <integer name="app_version_code">1</integer>
+    <!-- 设置后台停留时间验证 -->
+    <integer name="time">1800000</integer>
+
+    <string name="introduction_zh"><u>介绍</u></string>
+    <string name="introduction_en"><u>Introduction</u></string>
+    <string name="app_version">v1.0</string>
+    <string name="attentionyes">关注成功</string>
+    <string name="attentionno">取消关注</string>
+    <string name="near_merchant">附近商铺</string>
+    <string name="proj_name">ShareSDK_TPL</string>
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    <string name="add">添加</string>
+    <string name="map">地图</string>
+    <string name="union">合并</string>
+    <string name="split">拆分</string>
+    <string name="book">预定</string>
+    <string name="unsubscribe">退订</string>
+    <string name="isToMerge">是否进行合并</string>
+    <string name="isToBook">是否预定该展位</string>
+    <string name="isToSplit">是否拆分该展位</string>
+    <string name="contact">联系人:</string>
+    <string name="selectOne">请选择一个展位</string>
+    <string name="smallBatch">该展位不能拆分</string>
+    <string name="onlyOneBatch">只能选择一个展位</string>
+    <string name="product_search">输入关键字</string>
+    <string name="company_search">展商搜索</string>
+    <string name="company_edit">展商编辑</string>
+    <string name="input_company_name">请输入展商名称</string>
+    <string name="notSelectBatch">您没有选择要合并的展位</string>
+    <string name="selectOneOver">请选择两个或两个以上展位</string>
+    <!-- 验证信息 -->
+    <string name="verification_login">用户名和密码不能为空</string>
+
+    <!-- 7.2展馆 -->
+    <string name="h72">H7.2</string>
+    <string name="cmef">CMEF</string>
+    <string name="icmd">ICMD</string>
+    <string name="other">Other</string>
+    <!-- 会议新闻的四个选项卡内容  anthor:renzhihua -->
+    <string name="pchinews_news">会议新闻</string>
+    <string name="pchinews_press">新闻发布会</string>
+    <string name="pchinews_exhibition">展会</string>
+    <string name="pchinews_activity">活动</string>
+    <string name="register_note_en"></string>
+    <string name="register_note_cn">总则</string>
+
+    <!-- sharesdk s -->
+    <string name="sm_item_comment_like">评论与赞</string>
+    <string name="share_content">ShareSDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @ShareSDK</string>
+    <string name="share_content_short">ShareSDK不仅集成简单、支持如微信、新浪微博、腾讯微博等社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @ShareSDK</string>
+    <string name="comment_like_id">ssdk20131220190000</string>
+    <string name="comment_like_title">ShareSDK“评论与赞”模块发布</string>
+    <string name="comment_like_publich_time">2013-12-20 19:00</string>
+    <string name="comment_like_author">ShareSDK</string>
+    <string name="comment_like_comment_list">跟帖</string>
+    <string name="like_success">点赞成功</string>
+    <string name="like_fail">点赞失败</string>
+    <string name="myplatform">自定义平台</string>
+    <!-- sharesdk e -->
+
+    <string name="title_activity_my_task">MyTaskActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 自定义Dialog -->
+    <string name="alert_cancel">取消</string>
+    <string name="alert_ok">确定</string>
+    <string name="alert_content">提交后此任务状态不可被修改，请您确认该项任务是否完成？</string>
+    <string name="title_activity_cultural_exhibit">CulturalExhibitActivity</string>
+    <string name="title_activity_my_task_driver">MyTaskDriverActivity</string>
+    <string name="title_activity_vipinfo">VIPInfoActivity</string>
+    <string name="title_activity_cultrual_exhibit_detail">CultrualExhibitDetailActivity</string>
+    <string name="title_activity_cultural_exhibit_list">CulturalExhibitListActivity</string>
+    <string name="title_activity_schdule_detail">SchduleDetailActivity</string>
+    <string name="title_activity_xing_cheng_detail">XingChengDetailActivity</string>
+    <string name="title_activity_vipinfo_second_level">VipinfoSecondLevelActivity</string>
+    <string name="title_activity_fixed_task">FixedTaskActivity</string>
+    <string name="title_activity_mytask_list">MytaskListActivity</string>
+    <string name="title_activity_mytask_vip_list">MytaskVipListActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_vip_list_search">VipListSearchActivity</string>
+    <string name="title_activity_gaojiao_main">GaojiaoMainActivity</string>
+    <string name="title_activity_gao_jiao_hui_base">GaoJiaoHuiBaseActivity</string>
+    <string name="title_activity_zhan_shang_particulars">ZhanShangParticulars</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_huo_dong_particulars">HuoDongParticulars</string>
+    <string name="title_activity_particulars_huo_dong">ParticularsHuoDong</string>
+    <string name="title_activity_sou_suo">SouSuoActivity</string>
+    <string name="title_activity_liu_yan">LiuYanActivity</string>
+    <string name="title_activity_liu_yan_particulars">LiuYanParticulars</string>
+    <string name="net_error">网络异常，请稍后重试。</string>
+    <string name="title_activity_zxing">ZxingActivity</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!-- 设置页面 -->
+    <string name="setting_ninhao">您好，</string>
+    <string name="setting_please_login">请登录</string>
+    <string name="setting_click_login">点击进行登录或注册</string>
+    <string name="setting_supplement_data">点击修改个人资料</string>
+    <string name="supplementary_information">补充个人资料</string>
+    <string name="personal_data">个人资料</string>
+    <string name="setting_language_china">中文</string>
+    <string name="setting_language_englishi">English</string>
+    <string name="setting_qr_code">高交会二维码</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_set">设置</string>
+    <string name="edit">编辑</string>
+    <string name="my_free_ticket">我的赠票</string>
+    <string name="free_ticket">免费赠票！</string>
+    <!-- 展商页面 -->
+    <string name="exhibit_exhibitors">展商</string>
+    <string name="exhibit_activity">活动</string>
+    <!-- 展商详情 -->
+    <string name="exhibit_attention">关注</string>
+    <string name="exhibit_details">展商详情</string>
+    <string name="exhibit_leave_message">留言</string>
+    <string name="exhibit_place">展商位置：</string>
+    <string name="exhibit_contact">联系方式：</string>
+    <!-- 活动详情 -->
+    <string name="activity_details">活动详情</string>
+    <string name="activity_exhibitors_introduce">展商介绍</string>
+    <string name="activity_place">会展地址</string>
+    <string name="activity_credentials">活动凭证</string>
+    <string name="activity_apply">发起报名</string>
+    <string name="activity_audit">报名审核中</string>
+    <string name="activity_pass">审核通过</string>
+    <string name="please_add_personal_information">请补充个人信息</string>
+    <!-- 语言页面 -->
+    <string name="language_title">语言</string>
+    <string name="title_activity_language">LanguageActivity</string>
+    <!-- 二维码页面 -->
+    <string name="qr_code_title">二维码</string>
+    <string name="title_activity_qr_code">QrCodeActivity</string>
+    <!-- 关于我们页面 -->
+    <string name="about_us_title">关于我们</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <!-- 设置页面 -->
+    <string name="set_title">设置</string>
+    <string name="title_activity_set">SetActivity</string>
+    <!-- 留言页面 -->
+    <string name="message_title">留言</string>
+    <!-- 我的报名 -->
+    <string name="my_registration">我的报名</string>
+    <!-- 留言详情页面 -->
+    <string name="message_details_title">留言详情</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <!-- 首页 -->
+    <string name="home_title">高交会</string>
+    <string name="home_language">English</string>
+    <string name="home_message">消息</string>
+    <string name="home_scaning">扫一扫</string>
+    <string name="home_more">更多</string>
+    <string name="home_tongzhi">大会通知</string>
+    <string name="home_liangdian">亮点推荐</string>
+    <string name="home_navigation">展馆导航</string>
+    <string name="home_zixun">大会资讯</string>
+
+    <!-- 个人资料 -->
+    <string name="person_name">姓名</string>
+    <string name="contact_information">联系方式</string>
+    <string name="person_email">邮箱</string>
+    <string name="person_post">职务</string>
+    <string name="person_company">所属单位</string>
+    <string name="invite_code">邀请码</string>
+    <!-- 首页底部导航拦 -->
+    <string name="home_main">首页</string>
+    <string name="home_schedule">日程</string>
+    <string name="home_exhibit">展商</string>
+    <string name="home_my">个人</string>
+    <string name="title_activity_tong_zhi_more">TongZhiMoreActivity</string>
+    <string name="tongzhizhongxin">通知中心</string>
+    <string name="title_activity_liangdian">LiangdianActivity</string>
+    <string name="title_activity_liang_dian_details">LiangDianDetailsActivity</string>
+    <string name="exhibit_info">展商信息：</string>
+    <string name="exhibit_detail">展商详情：</string>
+    <string name="title_activity_tong_zhi_list">TongZhiListActivity</string>
+    <string name="title_activity_tong_zhi_detail">TongZhiDetailActivity</string>
+    <string name="title_activity_zi_xun_detail">ZiXunDetailActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- 登录&注册 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="login">登录</string>
+    <string name="login_error">登录失败，请检查用户名密码是否正确</string>
+    <string name="not_register">手机号尚未注册，请先注册</string>
+    <string name="register">注册</string>
+    <string name="auto_login">自动登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="get_password"><u>点此找回</u></string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="new_password">新密码</string>
+    <string name="username_hint">请输入手机号或用户名</string>
+    <string name="password_hint">输入密码</string>
+    <string name="confirm_password_hint">确认密码</string>
+    <string name="third_login_hint">-------------使用合作账号登陆--------------</string>
+    <string name="r_username_hint">请输入手机号或邮箱账号</string>
+    <string name="r_password_hint">6-20位字母、数字结合</string>
+    <string name="r_sex_text">性别</string>
+    <string name="r_women">女</string>
+    <string name="r_man">男</string>
+    <string name="r_register">立即注册</string>
+    <string name="logout">注销</string>
+    <string name="refresh">刷新</string>
+    <string name="login_phone_hint">手机号</string>
+    <string name="login_username_hint">手机号/账号</string>
+    <string name="login_send_validation_code">发送验证码</string>
+    <string name="login_validation_code">短信验证码</string>
+    <string name="login_use_password">使用密码登录</string>
+    <string name="login_use_phone">使用短信验证登录</string>
+    <string name="title_activity_get_password">GetPasswordActivity</string>
+    <string name="title_activity_leave_message">LeaveMessageActivity</string>
+    <string name="edit_phonenum_toast">请输入正确的手机号码</string>
+    <string name="edit_validation_toast">请输入正确的验证码</string>
+    <string name="login_username_toast">手机号/账号不能为空</string>
+    <string name="login_password_toast">密码不能为空</string>
+    <string name="login_not_username">用户名不得包含特殊字符</string>
+    <string name="register_phone_toast">手机号码不能为空</string>
+    <string name="register_validation_toast">短信验证码不能为空</string>
+    <string name="usernameorpassword_errer_toast">用户名密码错误</string>
+    <string name="send_validation_toast">验证码发送成功</string>
+    <string name="phonenum_unexist_toast">手机号不存在</string>
+    <string name="register_success_toast">注册成功</string>
+    <string name="validation_overtime_toast">验证码超时</string>
+    <string name="phonenum_error_toast">手机号错误</string>
+    <string name="validation_error_toast">验证码错误</string>
+    <string name="password_lesserror_toast">密码长度小于六位</string>
+    <string name="user_isexist_toast">手机号已经注册，请直接登录</string>
+    <string name="getpassword_success_toast">重置密码成功</string>
+    <string name="getpassword_failed_toast">重置密码失败</string>
+
+    <!-- 留言 -->
+    <string name="publish">发布</string>
+    <string name="leave_hint">主题不能超过100个字</string>
+    <string name="image_max_count">最多添加9张图片</string>
+
+    <!-- 设置页面 -->
+    <string name="new_message_remind">新消息提醒</string>
+    <string name="contact_us">联系我们</string>
+    <string name="test_edition">检测版本更新</string>
+    <string name="cancellation">注销</string>
+    <string name="notlogin">尚未登录</string>
+    <!-- 联系我们 -->
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <!-- 展商资料 -->
+    <string name="title_activity_business_information">BusinessInformation</string>
+    <!-- 大会统计 -->
+    <string name="title_activity_general_statistics">GeneralStatistics</string>
+    <!-- 大会统计 -->
+    <string name="general_statistics">大会统计</string>
+    <!-- 展品详情 -->
+    <string name="exhibits_details">展品详情</string>
+    <!-- 大会点评界面 -->
+    <string name="title_activity_dian_ping">DianPingActivity</string>
+    <string name="dianping">大会点评</string>
+    <string name="hasSpecialChat">回复中请勿包含特殊字符</string>
+
+    <!-- 会议服务 -->
+    <string name="conference_service">服务电话</string>
+    <string name="assembly_vehicle">大会车辆</string>
+    <string name="conference">会务总机</string>
+    <string name="medical_vehicle">医疗中心</string>
+    <string name="security_center">安保中心</string>
+    <string name="vehicle_center">车辆中心</string>
+    <string name="hotel">酒店管理中心</string>
+    <string name="title_activity_conference_service">ConferenceService</string>
+    <string name="title_activity_assembly">AssemblyActivity</string>
+    <string name="title_activity_conference">ConferenceActivity</string>
+    <string name="title_activity_medical">MedicalActivity</string>
+    <string name="title_activity_security">SecurityActivity</string>
+    <string name="title_activity_vehicle">VehicleActivity</string>
+    <string name="title_activity_hotel">HotelActivity</string>
+    <string name="title_activity_personal_data">PersonalData</string>
+    <string name="title_activity_my_registration">MyRegistration</string>
+    <string name="title_activity_pic_view_pager">PicViewPagerActivity</string>
+
+    <!-- 日程 -->
+    <string name="schedule_title">标题</string>
+    <string name="exhibitors_title">展商详情</string>
+    <string name="convention_title">会展详情</string>
+    <string name="meeting_title">会议详情</string>
+    <string name="my_credentials">我的凭证</string>
+    <string name="have_to_attend">已报名</string>
+    <string name="convention_time">会展时间</string>
+    <string name="convention_place">会展地点</string>
+    <string name="exhibitors">参与展商</string>
+    <string name="activity_time">活动时间：</string>
+    <string name="guest">参与嘉宾</string>
+    <string name="not_login">请登录后使用</string>
+    <string name="title_activity_guest_service">GuestServiceActivity</string>
+    <!-- 嘉宾服务 lixm -->
+    <string name="hotel_information">下榻酒店信息</string>
+    <string name="hotel_navigation">酒店导航</string>
+    <string name="hall_navigation">会场导航</string>
+    <string name="exclusive_service_member">专属服务人员</string>
+    <string name="onekey_call">一键呼叫</string>
+    <string name="hotelinfo_title">酒店信息</string>
+    <string name="exclusive_title"></string>
+    <string name="hotel_name_tv">下榻酒店：</string>
+    <string name="hotel_location_tv">酒店位置地点：</string>
+    <string name="you_room">您的房间：</string>
+    <string name="room">室</string>
+    <!-- 服务反馈 lixm -->
+    <string name="liuyan_edit_hint">请填写留言</string>
+    <string name="btn_text_send">发送</string>
+    <string name="have_new_liuyan">有新留言</string>
+    <string name="empty_text">暂无数据</string>
+    <!-- 通知中心 lixm -->
+    <string name="notice_center_text">通知中心</string>
+    <!-- 报名详情 -->
+    <string name="registration_details">报名详情</string>
+    <string name="registration_place">会展地点</string>
+    <!-- 服务反馈 -->
+    <string name="service_feedback">服务反馈</string>
+    <!-- 嘉宾列表 -->
+    <string name="title_guestlist">嘉宾列表</string>
+    <string name="title_guestjiaoliu">嘉宾交流</string>
+    <string name="title_guestinfo">嘉宾详情</string>
+    <string name="guestinfo_guest_xingcheng">嘉宾日程</string>
+    <string name="title_activity_conversation_list">ConversationListActivity</string>
+    <!-- 消息 -->
+    <string name="message">消息</string>
+    <string name="title_activity_diao_du">DiaoDuActivity</string>
+    <string name="fuwudiaodu">服务调度</string>
+    <string name="title_activity_zhan_pin_particulars">ZhanPinParticularsActivity</string>
+    <string name="title_activity_volley_test">VolleyTestActivity</string>
+
+    <!-- webview加载为空的toast提示语 -->
+    <string name="empty_toast">暂无内容</string>
+    <!-- 大会资讯 -->
+    <string name="meeting_information_title">大会资讯</string>
+    <!-- 观众互动 -->
+    <string name="follow_my">关注我的</string>
+    <string name="my_follow">我关注的</string>
+    <string name="my_follows">我的关注</string>
+    <string name="follow_statistics">关注用户统计</string>
+    <!-- 我关注的 -->
+    <string name="perfect_contentment">非常关注</string>
+    <string name="very_contentment">十分关注</string>
+    <string name="normal_contentment">一般关注</string>
+    <!-- 观众详情 -->
+    <string name="audience_detail">观众详情</string>
+    <string name="follow">关注</string>
+    <string name="follow_now">已关注</string>
+    <string name="save_contacts">保存</string>
+    <string name="cancel_attention">取消关注</string>
+    <string name="common">一般</string>
+    <string name="very">十分</string>
+    <string name="most">非常</string>
+    <string name="subordinate_units">所属单位：</string>
+    <string name="contact_information_audience">联系方式：</string>
+    <string name="my_remarks">我的备注</string>
+    <string name="last_comments">最新留言</string>
+    <string name="check_all_messages">查看全部留言</string>
+    <!-- 嘉宾签到 -->
+    <string name="guest_sign">服务签到</string>
+    <string name="sign">签到</string>
+    <string name="pick_up">接机</string>
+    <string name="check_in">办入住</string>
+    <string name="attend_a_show">看展览</string>
+    <string name="send_someone_to_airport">送机</string>
+    <!-- 我的关注==》搜索界面 -->
+    <string name="search_text">请输入搜索内容</string>
+    <string name="cancle_search">搜索</string>
+    <!-- 通讯录 -->
+    <string name="address_group">通讯录</string>
+    <!-- 专属服务人员 -->
+    <string name="dial_phone">打电话</string>
+    <string name="send_sms">发短信</string>
+    <string name="send_information">发消息</string>
+    <!-- 活动详情报名详情 -->
+    <string name="join">已报名</string>
+    <string name="unjoin">未报名</string>
+    <!-- 拨打电话手机号为空toast提示 -->
+    <string name="empty_mobile">手机号为空！</string>
+    <!-- 审核未通过 -->
+    <string name="shenhe_unpass">审核未通过</string>
+    <!-- 审核通过 -->
+    <string name="shenhe_pass">审核通过</string>
+    <!-- 大会导航 -->
+    <string name="conference_navi">大会导航</string>
+    <string name="exhibition_hall_navi">展馆导航</string>
+    <string name="dahuinavi_openbd_toast">您尚未安装百度地图app或app版本过低，点击确认安装？</string>
+    <string name="hint_toast">提示</string>
+    <string name="not_find_result">抱歉，未找到结果</string>
+    <string name="please_confirm_destination">请先确定目的地!</string>
+    <string name="please_confirm_start_destination">请先确定起终点!</string>
+    <string name="opening_baidumap">正在打开百度地图！</string>
+    <string name="destination">终点</string>
+    <string name="start_point">起始点</string>
+    <!-- 留言 -->
+    <string name="liuyan_hint">请输入留言</string>
+    <string name="liuyan_commit">提交</string>
+    <!-- 留言详情 -->
+    <string name="liuyan_detail_hint">请填写留言</string>
+    <string name="liuyan_detail_send">发送</string>
+    <!-- 展商资料 -->
+    <string name="business_information">展商资料</string>
+    <!-- 日程 -->
+    <string name="have_no_attend">未报名</string>
+    <!-- 会务总机 -->
+    <string name="busness_operator">会务总机</string>
+    <!-- 医疗中心 -->
+    <string name="medical_center">医疗中心</string>
+    <!-- 安保中心 -->
+    <string name="security_center_title">安保中心</string>
+    <!-- 车辆中心 -->
+    <string name="car_center_title">车辆中心</string>
+    <!-- 酒店管理中心 -->
+    <string name="hotel_manger_center_title">酒店管理中心</string>
+
+    <!-- 数据请求失败 -->
+    <string name="getdata_error">数据请求失败，请稍后重试。</string>
+
+    <!-- LeaveMessageActivity 发布成功 -->
+    <string name="public_success">发布成功</string>
+    <!-- LeaveMessageActivity 发布成功 -->
+    <string name="public_failed">发布失败,请稍后重试</string>
+    <!-- LeaveMessageActivity 提示 -->
+    <string name="notifi">提示</string>
+    <!-- LeaveMessageActivity 是否删除 -->
+    <string name="isDelete">要删除这张照片吗?</string>
+    <!-- LeaveMessageActivity 请添写动态内容或至少添加一张图片 -->
+    <string name="leastPic">请添写动态内容或至少添加一张图片</string>
+    <!-- 展商详情 -->
+    <string name="have_follow">已关注</string>
+
+    <!-- 留言为空的时候的toast -->
+    <string name="liuyan_empty">留言不能为空！</string>
+    <!-- 嘉宾服务 会场导航dialog -->
+    <string name="dialog_title">请选择会场:</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancle">取消</string>
+    <string name="lastestPage">没有更多的数据了</string>
+    <string name="nameIsNull">姓名不得为空</string>
+    <string name="emailIsError">邮箱格式有误</string>
+    <string name="setSuccess">设置成功</string>
+    <string name="reply_success">评论成功</string>
+    <string name="reply_fail">评论失败，请稍后重试</string>
+    <string name="replyIsNull">请输入评论内容</string>
+    <string name="latest_version">当前已是最新版本!</string>
+    <string name="updata_remind">更新提醒 </string>
+    <string name="haveNewVersion">有新版本，是否更新？</string>
+    <string name="network">请求失败，请稍后重试</string>
+    <!-- 定位时经纬度为空的提示 -->
+    <string name="location_empty">定位数据有误，请稍后再试。</string>
+
+    <!-- 分页加载 -->
+    <string name="getmore">正在加载更多内容...</string>
+    <string name="nothing">没有更多数据了...</string>
+
+    <!-- 无网络的情况下 -->
+    <string name="netless">现在没有网络哦!</string>
+    <string name="send_leaveword_success">留言发送成功！</string>
+
+    <!-- 活动详情 -->
+    <string name="in_the_application">报名中</string>
+    <!-- 无网刷新 -->
+    <string name="netless_refresh">刷新</string>
+    <string name="netless_toast">您当前的网络状态不佳，请稍后再试！</string>
+    <!-- 下榻酒店信息 空信息显示 -->
+    <string name="hotel_information_isnull">当前无酒店信息</string>
+    <!-- 添加日程 -->
+    <string name="title_activity_add_schedule">AddScheduleActivity</string>
+    <string name="initact_choose_starttime">请选择活动开始时间</string>
+    <string name="initact_choose_endtime">请选择活动结束时间</string>
+    <string name="initact_check_time">所选时间不得早于当前时间，请重新选择！</string>
+    <string name="publish_act_error">活动信息不完整，请重新编辑</string>
+    <string name="publish_time_error">活动结束时间不得早于开始时间，请重新选择！</string>
+    <string name="publish_success">活动信息上传成功！</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="add_schedule_success">个人行程信息保存成功</string>
+    <string name="add_schedule">添加日程</string>
+    <string name="submit">提交</string>
+    <string name="choose_date">选择日期</string>
+    <string name="complete_information">请将信息填写完整</string>
+    <string name="check_endtime">日程结束时间必须大于日程开始时间</string>
+    <string name="schedule_place">地点</string>
+    <string name="schedule_date">日期</string>
+    <string name="schedule_start">开始时间</string>
+    <string name="schedule_end">结束时间</string>
+    <string name="schedule_introduction">简介</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+
+    <!-- 采访预约 -->
+    <string name="appointment_title">采访预约</string>
+    <string name="appointment_detail_title">预约详情</string>
+    <string name="appointment_text">预约</string>
+    <string name="appointment_in">预约中</string>
+    <!-- 我的足迹 -->
+    <string name="my_tracks_title">我的足迹</string>
+    <!-- 补充个人信息 toast -->
+    <string name="finish_you_personal_info">请补充姓名后使用</string>
+    <!-- 大会资料 -->
+    <string name="meetingdatas_title">大会资料</string>
+    <!-- 媒体资料 -->
+    <string name="media_datas_title">媒体资料</string>
+    <!-- dialog提示语 -->
+    <string name="dialog_follow_content">关注展商后可以留言!</string>
+    <string name="dialog_appointment_content">预约展商后可以留言!</string>
+    <string name="Forcedtologoff">您的账号在别的设备上登录，您被迫下线！</string>
+    <string name="error_hint">您的账号在别的设备上登录，您被迫下线！</string>
+    <!-- 媒体相关 -->
+    <string name="mdia_interaction">媒体互动</string>
+    <string name="mediainter_detail">媒体详情</string>
+    <!-- 翻译相关 -->
+    <string name="translate_tv">Translation</string>
+    <string name="load_error">加载页面出错！</string>
+    <string name="guanzhu_success">关注成功</string>
+    <string name="isLogout">是否注销登录？</string>
+    <string name="ExhibitNavigation">展馆导航</string>
+    <string name="all_schedule">全部日程</string>
+    <string name="personal_schedule">个人日程</string>
+    <string name="schedule_time">时间  / </string>
+    <string name="offline_mode">离线模式</string>
+    <string name="sign_in">确认签到？</string>
+    <string name="booth_number">展位号:</string>
+    <string name="login_error_hint">用户名或密码错误</string>
+    <string name="exhibitor_list_title">展商列表</string>
+    <string name="to">至</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="title_activity_my_tickets">MyTicketsActivity</string>
+    <string name="cert6">有效证件号码（最后6位）</string>
+    <string name="ticketId">电子票编号</string>
+    <string name="ticket_commit">提交</string>
+    <string name="name_cant_null">姓名不得为空</string>
+    <string name="tel_cant_null">联系电话不能为空</string>
+    <string name="input_corrent_tel">请输入正确的联系电话</string>
+    <string name="cert6_cant_null">证件后6位不得为空</string>
+    <string name="cert6_should_complete">请完整填写证件后6位</string>
+    <string name="ticketid_cant_null">电子票编号不得为空</string>
+    <string name="name_has_special">姓名不可包含特殊字符</string>
+    <string name="ticket_has_special">电子票编号不可包含特殊字符</string>
+    <string name="tel">联系电话</string>
+    <string name="Eticket_binding">电子票绑定</string>
+    <string name="choose_document_type">选择证件类型</string>
+    <string name="Navigation_path">导航路径</string>
+    <string name="industry">行业:</string>
+    <string name="address">地址:</string>
+    <string name="url_tv">网址:</string>
+    <string name="offline_toast">开启离线模式后，无需网络即可浏览日程信息和展商信息</string>
+    <string name="start_offline_mode">开启</string>
+    <string name="close_offline_mode">关闭</string>
+    <string name="eticket_bing_success">电子票绑定成功</string>
+    <string name="last6">（最后6位）</string>
+    <string name="the_scene_service_telephone">现场服务电话</string>
+    <string name="ticket_consultation">票证咨询</string>
+    <string name="the_food_hygiene">食品卫生投诉电话</string>
+    <string name="on_site_medical_care">现场医疗救护点</string>
+    <string name="security_alarm">治安报警</string>
+    <string name="professional_audience">专业观众服务</string>
+    <string name="consulting_the_reception">咨询接待</string>
+    <string name="fire_alarm">消防报警</string>
+    <string name="convention_and_exhibition_center_complaints">会展中心投诉电话</string>
+    <string name="language_tag">语言</string>
+
+    <!-- 全部栏目 -->
+    <string name="notice_center">通知中心</string>
+    <string name="guide">导航</string>
+    <string name="conference_info">大会资讯</string>
+    <string name="highlights_recommendations">亮点推荐</string>
+    <string name="site_service_telephone">服务电话</string>
+    <string name="my_followings">我的关注</string>
+    <string name="conference_file">大会资料</string>
+    <string name="my_footprint">我的足迹</string>
+    <string name="my_audience">我的观众</string>
+    <string name="conference_comments">大会点评</string>
+    <string name="service_dispatch">服务调度</string>
+    <string name="guest_list">嘉宾列表</string>
+    <string name="conference_statistics">大会统计</string>
+    <string name="service_sign_in">服务签到</string>
+    <string name="address_book">通讯录</string>
+    <string name="guest_service">嘉宾服务</string>
+    <string name="guest_discussions">嘉宾交流</string>
+    <string name="book_an_interview">采访预约</string>
+    <string name="exhibitor_info">展商资料</string>
+    <string name="media_file">媒体资料</string>
+    <string name="media_interaction">媒体互动</string>
+    <string name="scan_qrcode">扫描二维码</string>
+    <string name="audience_interaction">观众互动</string>
+    <string name="onLine_mode">在线模式</string>
+    <string name="current">当前</string>
+    <string name="download">正在下载</string>
+    <string name="Version_update">版本更新中...</string>
+    
+    <string name="network_connection_timeout">网络连接超时</string>
+     <string name="my_ticket">“很遗憾！您没能抽到高交会免费门票，您可以到服务点领取小礼品！数量有限，先到先得！”</string>
+    
+</resources>

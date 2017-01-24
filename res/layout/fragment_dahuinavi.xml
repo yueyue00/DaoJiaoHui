@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/dahuinavi_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RadioGroup
+        android:id="@+id/dahuinavi_routetype_rg"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <com.gj.gaojiaohui.view.MDMRadioButton
+            android:id="@+id/radiobutton_drive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_huiyinavi_drivebg"
+            android:drawablePadding="5dp"
+            android:text="自驾"
+            android:textColor="@drawable/selector_huiyinavi_routetype_textcolor"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/verter_line1"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="#747474" />
+
+        <com.gj.gaojiaohui.view.MDMRadioButton
+            android:id="@+id/radiobutton_transit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_huiyinavi_transitbg"
+            android:drawablePadding="5dp"
+            android:text="公交"
+            android:textColor="@drawable/selector_huiyinavi_routetype_textcolor"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/verter_line2"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="#747474" />
+
+        <com.gj.gaojiaohui.view.MDMRadioButton
+            android:id="@+id/radiobutton_walk"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_huiyinavi_walkbg"
+            android:drawablePadding="5dp"
+            android:text="步行"
+            android:textColor="@drawable/selector_huiyinavi_routetype_textcolor"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/normal_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dahuinavi_routetype_rg"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/zhanguan"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dahuinavi_zhanguan" />
+
+        <Button
+            android:id="@+id/jiudian"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dahuinavi_jiudian" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/openbdmap_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_huiyinavi_openbdmap" />
+
+</RelativeLayout>

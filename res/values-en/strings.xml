@@ -1,0 +1,462 @@
+<resources>
+
+    <string name="app_name">China Hi-Tech Fair</string>
+    <string name="net_error">Retry</string>
+    <string name="head">This is a HeadView</string>
+    <string name="pull_to_refresh">Pull down to refresh</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="refresh_succeed">Refreshing succeed</string>
+    <string name="refresh_fail">Refreshing failed</string>
+    <string name="pullup_to_load">Pull up to load more</string>
+    <string name="release_to_load">Release to load</string>
+    <string name="loading">Loading</string>
+    <string name="load_succeed">Loading succeed</string>
+    <string name="load_fail">Loading failed</string>
+    <!-- 设置页面 -->
+    <string name="setting_ninhao">Welcome</string>
+    <string name="setting_please_login">Please log in</string>
+    <string name="setting_click_login">Tap/click here to log in or register</string>
+    <string name="setting_supplement_data">Tap/click here to edit your profile</string>
+    <string name="personal_data">profile</string>
+    <string name="setting_language_china">English</string>
+    <string name="setting_language_englishi">English</string>
+    <string name="setting_qr_code">CHTF QR code</string>
+    <string name="setting_about_us">About us</string>
+    <string name="setting_set">Settings</string>
+    <string name="edit">Edit</string>
+    <!-- 展商页面 -->
+    <string name="exhibit_exhibitors">Exhibitors</string>
+    <string name="exhibit_activity">Activities</string>
+    <!-- 展商详情 -->
+    <string name="exhibit_attention">Follow</string>
+    <string name="exhibit_details">Exhibitor info</string>
+    <string name="exhibit_leave_message">Comments</string>
+    <string name="exhibit_place">Exhibitor booth:</string>
+    <string name="exhibit_contact">Contacs:</string>
+    <!-- 活动详情 -->
+    <string name="activity_details">Event details</string>
+    <string name="activity_exhibitors_introduce">Exhibitor info</string>
+    <string name="activity_place">Exhibition Venue:</string>
+    <string name="activity_credentials">Registration receipt</string>
+    <string name="activity_apply">Apply now</string>
+    <string name="activity_audit">Your application is under review</string>
+    <string name="activity_pass">Your application is approved</string>
+    <!-- 语言页面 -->
+    <string name="language_title">Language</string>
+    <!-- 二维码页面 -->
+    <string name="qr_code_title">QR code</string>
+    <!-- 关于我们页面 -->
+    <string name="about_us_title">About us</string>
+    <!-- 设置页面 -->
+    <string name="set_title">Settings</string>
+    <!-- 留言页面 -->
+    <string name="message_title">Leave a comment</string>
+    <!-- 我的报名 -->
+    <string name="my_registration">My application/registration</string>
+    <!-- 留言详情页面 -->
+    <string name="message_details_title">Comments</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <!-- 首页 -->
+    <string name="home_title">CHTF</string>
+    <string name="home_language">中文</string>
+    <string name="home_message">Message</string>
+    <string name="home_scaning">Scan</string>
+    <string name="home_more">More</string>
+    <string name="home_tongzhi">Conference notice</string>
+    <string name="home_liangdian">Bright Spot</string>
+    <string name="home_navigation">Venue Guide</string>
+    <string name="home_zixun">Conference Info</string>
+    <!-- 个人资料 -->
+    <string name="person_name">Name</string>
+    <string name="contact_information">Contacts</string>
+    <string name="person_email">Email</string>
+    <string name="person_post">Title</string>
+    <string name="person_company">Company</string>
+    <!-- 首页底部导航拦 -->
+    <string name="home_main">Home Page</string>
+    <string name="home_schedule">Agenda</string>
+    <string name="home_exhibit">Exhibitor</string>
+    <string name="home_my">Personal</string>
+    <string name="tongzhizhongxin">Notice center</string>
+    <string name="exhibit_info">Exhibitor list:</string>
+    <string name="exhibit_detail">Exhibitor Info:</string>
+    <!-- 登录&注册 -->
+    <string name="ok">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Log in</string>
+    <string name="login_error">Failed to log in, please check your username and password</string>
+    <string name="not_register">Failed to recognize this mobile number, please register first</string>
+    <string name="register">Register</string>
+    <string name="auto_login">Auto log-in</string>
+    <string name="forget_password">Forgot password ？</string>
+    <string name="get_password"><u>Click here to reset</u></string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="new_password">New password</string>
+    <string name="username_hint">Please enter your mobile number or username</string>
+    <string name="password_hint">Please enter your password</string>
+    <string name="confirm_password_hint">Please confirm your password</string>
+    <string name="third_login_hint">-------------Log in through other social accounts--------------</string>
+    <string name="r_username_hint">Please enter your mobile number or email address</string>
+    <string name="r_password_hint">Password must be a combination of 6 to 20 characters and numbers</string>
+    <string name="r_sex_text">Sex</string>
+    <string name="r_women">Female</string>
+    <string name="r_man">Male</string>
+    <string name="r_register">Register now</string>
+    <string name="logout">Deactive/cancel your account</string>
+    <string name="refresh">Refresh</string>
+    <string name="login_phone_hint">Mobile number</string>
+    <string name="login_username_hint">Mobile number / username</string>
+    <string name="login_send_validation_code">Send verification code</string>
+    <string name="login_validation_code">SMS verification code</string>
+    <string name="login_use_password">Log in with password</string>
+    <string name="login_use_phone">Log in with SMS verification code</string>
+    <string name="edit_phonenum_toast">Invalid mobile number, please try again</string>
+    <string name="edit_validation_toast">Invalid verification code, please try again</string>
+    <string name="login_username_toast">Mobile number / username must not be empty</string>
+    <string name="login_password_toast">Password must not be empty</string>
+    <string name="login_not_username">Username must not contain special charaters</string>
+    <string name="register_phone_toast">Mobile number must not be empty</string>
+    <string name="register_validation_toast">SMS verification code must not be empty</string>
+    <string name="usernameorpassword_errer_toast">Invalid username or password</string>
+    <string name="send_validation_toast">Verification code sent</string>
+    <string name="phonenum_unexist_toast">Invalid mobile number</string>
+    <string name="register_success_toast">Registeration succeed</string>
+    <string name="validation_overtime_toast">Verification code timed out</string>
+    <string name="phonenum_error_toast">Mobile number incorrect</string>
+    <string name="validation_error_toast">Verification code incorrect</string>
+    <string name="password_lesserror_toast">Password must not exceed 6 characters</string>
+    <string name="user_isexist_toast">Registered mobile number, please log in directly</string>
+    <string name="getpassword_success_toast">Password reset succeed</string>
+    <string name="getpassword_failed_toast">Password reset failed</string>
+
+    <!-- 留言 -->
+    <string name="publish">Publish</string>
+    <string name="leave_hint">Comments must not exceed 100 words</string>
+    <string name="image_max_count">Upload 9 pictures at a maximum </string>
+
+    <!-- 设置页面 -->
+    <string name="new_message_remind">New message alerts</string>
+    <string name="contact_us">Contact us</string>
+    <string name="test_edition">Detect new versions</string>
+    <string name="cancellation">Deactive/cancel your account</string>
+    <string name="notlogin">You have not logged in</string>
+    <!-- 大会统计 -->
+    <string name="general_statistics">Conference statistics</string>
+    <!-- 展品详情 -->
+    <string name="exhibits_details">Exhibit details</string>
+    <string name="dianping">Conference comments</string>
+    <string name="hasSpecialChat">Your comments must not contain special characters</string>
+
+    <!-- 会议服务 -->
+    <string name="conference_service">Service telephone</string>
+    <string name="assembly_vehicle">Conference vehicles</string>
+    <string name="conference">Operator</string>
+    <string name="medical_vehicle">Medical center</string>
+    <string name="security_center">Security center</string>
+    <string name="vehicle_center">Vehicle center</string>
+    <string name="hotel">Hotel management center</string>
+    <!-- 日程 -->
+    <string name="schedule_title">Agenda details</string>
+    <string name="exhibitors_title">Exhibitor details</string>
+    <string name="convention_title">Exhibition details</string>
+    <string name="meeting_title">Conference details</string>
+    <string name="my_credentials">My registration receipt</string>
+    <string name="have_to_attend">Already applied</string>
+    <string name="convention_time">Exhibition Date:</string>
+    <string name="convention_place">Exhibition Venue:</string>
+    <string name="exhibitors">Exhibitors</string>
+    <string name="activity_time">Activity time:</string>
+    <string name="guest">Guests</string>
+    <string name="not_login">Please log in to use</string>
+    <!-- 嘉宾服务 lixm -->
+    <string name="hotel_information">Hotel info</string>
+    <string name="hotel_navigation">Hotel guide</string>
+    <string name="hall_navigation">Venue guide</string>
+    <string name="exclusive_service_member">Personal attendants</string>
+    <string name="guest_service">Guest service</string>
+    <string name="onekey_call">One-button call</string>
+    <string name="hotelinfo_title">Hotel info</string>
+    <string name="exclusive_title"></string>
+    <string name="hotel_name_tv">Hotel:</string>
+    <string name="hotel_location_tv">Hotel location:</string>
+    <string name="you_room">Your room:</string>
+    <string name="room">Room</string>
+    <!-- 服务反馈 lixm -->
+    <string name="liuyan_edit_hint">Please leave your comment</string>
+    <string name="btn_text_send">Send</string>
+    <string name="have_new_liuyan">New comments</string>
+    <string name="empty_text">No data available</string>
+    <!-- 通知中心 lixm -->
+    <string name="notice_center_text">Notice center</string>
+    <!-- 报名详情 -->
+    <string name="registration_details">Application info</string>
+    <string name="registration_place">Exhibition Venue</string>
+    <!-- 服务反馈 -->
+    <string name="service_feedback">Service feedback</string>
+    <!-- 嘉宾列表 -->
+    <string name="title_guestlist">Guest list</string>
+    <string name="title_guestjiaoliu">Guest discussions</string>
+    <string name="title_guestinfo">Guest info</string>
+    <string name="guestinfo_guest_xingcheng">Guest agenda</string>
+    <!-- 消息 -->
+    <string name="message">Message</string>
+    <string name="fuwudiaodu">Service scheduling</string>
+    <!-- webview加载为空的toast提示语 -->
+    <string name="empty_toast">No content available</string>
+    <!-- 大会资讯 -->
+    <string name="meeting_information_title">Conference news</string>
+    <!-- 观众互动 -->
+    <string name="follow_my">My followers</string>
+    <string name="my_follow">My followings</string>
+    <string name="my_follows">My followings</string>
+    <string name="follow_statistics">Statistics on following users</string>
+    <!-- 我关注的 -->
+    <string name="perfect_contentment">Strongly interested</string>
+    <string name="very_contentment">Interested</string>
+    <string name="normal_contentment">Followed</string>
+    <!-- 观众详情 -->
+    <string name="audience_detail">Visitor info</string>
+    <string name="follow">Follow</string>
+    <string name="follow_now">Followed</string>
+    <string name="save_contacts">Save</string>
+    <string name="cancel_attention">Stop following</string>
+    <string name="common">Normal</string>
+    <string name="very">Very</string>
+    <string name="most">Extremely</string>
+    <string name="subordinate_units">Company:</string>
+    <string name="contact_information_audience">Contacts:</string>
+    <string name="my_remarks">My notes</string>
+    <string name="last_comments">New comments</string>
+    <string name="check_all_messages">Check all comments</string>
+    <!-- 嘉宾签到 -->
+    <string name="guest_sign">Guest registration</string>
+    <!-- 我的关注==》搜索界面 -->
+    <string name="search_text">Please enter your search content</string>
+    <string name="cancle_search">search</string>
+    <!-- 通讯录 -->
+    <string name="address_group">Address book</string>
+    <!-- 专属服务人员 -->
+    <string name="dial_phone">Make a call</string>
+    <string name="send_sms">Send a message</string>
+    <string name="send_information">Send a message</string>
+    <!-- 活动详情报名详情 -->
+    <string name="join">Already applied</string>
+    <string name="unjoin">No application received</string>
+    <!-- 拨打电话手机号为空toast提示 -->
+    <string name="empty_mobile">Invalid mobile number！</string>
+    <!-- 审核未通过 -->
+    <string name="shenhe_unpass">Application not approved</string>
+    <!-- 审核通过 -->
+    <string name="shenhe_pass">Application approved</string>
+    <!-- 大会导航 -->
+    <string name="conference_navi">Conference guide</string>
+    <string name="exhibition_hall_navi">Venue guide</string>
+    <string name="dahuinavi_openbd_toast">You have not installed Baidu map or your version is too low, click to intall?</string>
+    <string name="hint_toast">Promt/suggestions</string>
+    <string name="not_find_result">Sorry, no results found</string>
+    <string name="please_confirm_destination">Please choose your destination!</string>
+    <string name="please_confirm_start_destination">Please choose your starting point!</string>
+    <string name="opening_baidumap">Loading Baidu map！</string>
+    <string name="destination">Destination</string>
+    <string name="start_point">Starting point</string>
+    <!-- 留言 -->
+    <string name="liuyan_hint">Please leave your comment</string>
+    <string name="liuyan_commit">Submit</string>
+    <!-- 留言详情 -->
+    <string name="liuyan_detail_hint">Please leave your comment</string>
+    <string name="liuyan_detail_send">Send</string>
+    <!-- 展商资料 -->
+    <string name="business_information">Exhibitor materials</string>
+    <!-- 日程 -->
+    <string name="have_no_attend">You have not registered</string>
+    <!-- 会务总机 -->
+    <string name="busness_operator">Operator</string>
+    <!-- 医疗中心 -->
+    <string name="medical_center">Medical center</string>
+    <!-- 安保中心 -->
+    <string name="security_center_title">Security center</string>
+    <!-- 车辆中心 -->
+    <string name="car_center_title">Vehicle center</string>
+    <!-- 酒店管理中心 -->
+    <string name="hotel_manger_center_title">Hotel management center</string>
+
+    <!-- 数据请求失败 -->
+    <string name="getdata_error">Data request failed, please try again later</string>
+
+    <!-- LeaveMessageActivity 发布成功 -->
+    <string name="public_success">Publishing succeed</string>
+    <!-- LeaveMessageActivity 发布成功 -->
+    <string name="public_failed">Publishing failed</string>
+    <!-- LeaveMessageActivity 提示 -->
+    <string name="notifi">promt</string>
+    <!-- LeaveMessageActivity 是否删除 -->
+    <string name="isDelete">Delet this photo?</string>
+    <!-- LeaveMessageActivity 请添写动态内容或至少添加一张图片 -->
+    <string name="leastPic">Please enter your content or at least upload one picture</string>
+    <!-- 展商详情 -->
+    <string name="have_follow">Followed</string>
+    <!-- 留言为空的时候的toast -->
+    <string name="liuyan_empty">Comments must not be empty！</string>
+    <!-- 嘉宾服务 会场导航dialog -->
+    <string name="dialog_title">Please choose the venue:</string>
+    <string name="dialog_ok">Confirm</string>
+    <string name="dialog_cancle">Cancel</string>
+    <string name="lastestPage">No more data</string>
+    <string name="nameIsNull">Name must not be empty</string>
+    <string name="emailIsError">Invaid email address</string>
+    <string name="setSuccess">New settings saved</string>
+    <string name="reply_success">Comments saved</string>
+    <string name="reply_fail">Comments not saved, please try again later</string>
+    <string name="replyIsNull">Please enter your comments</string>
+    <string name="latest_version">This is the latest version!</string>
+    <string name="updata_remind">New version alerts</string>
+    <string name="haveNewVersion">New version detected, update now?</string>
+    <string name="network">Failed to log in, please try again later</string>
+    <!-- 定位时经纬度为空的提示 -->
+    <string name="location_empty">Failed to detect location, please try again later</string>
+
+    <!-- 分页加载 -->
+    <string name="getmore">Loading...</string>
+    <string name="nothing">No more data...</string>
+
+    <!-- 无网络的情况下 -->
+    <string name="netless">No internet connection!</string>
+    <string name="send_leaveword_success">Comments published!</string>
+
+    <!-- 活动详情 -->
+    <string name="in_the_application">Application started</string>
+    <!-- 无网刷新 -->
+    <string name="netless_refresh">Refreshing</string>
+    <string name="netless_toast">No internet connection, please try again later!</string>
+    <!-- 下榻酒店信息 空信息显示 -->
+    <string name="hotel_information_isnull">Hotel info is currently not available</string>
+    <!-- 添加日程 -->
+    <string name="title_activity_add_schedule">AddScheduleActivity</string>
+    <string name="initact_choose_starttime">Please choose your starting time</string>
+    <string name="initact_choose_endtime">Please choose your ending time</string>
+    <string name="initact_check_time">Your selected time must not predate the current time, please try again</string>
+    <string name="publish_act_error">Incomplete description, please edit the text again</string>
+    <string name="publish_time_error">Ending time must not predate the starting time, please try again</string>
+    <string name="publish_success">Activity description uploading complete</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="add_schedule_success">Your personal agenda saved</string>
+    <string name="add_schedule">Add an agenda</string>
+    <string name="submit">Submit</string>
+    <string name="choose_date">Choose a date</string>
+    <string name="complete_information">Please complete your information</string>
+    <string name="check_endtime">Your ending time must be later than your starting time</string>
+    <string name="schedule_place">Location</string>
+    <string name="schedule_date">Date</string>
+    <string name="schedule_start">Starting time</string>
+    <string name="schedule_end">Ending time</string>
+    <string name="schedule_introduction">Introduction</string>
+    <string name="year">Y</string>
+    <string name="month">M</string>
+    <string name="day">D</string>
+    <string name="hours">H</string>
+    <string name="minutes">M</string>
+    <string name="add">Add</string>
+    <!-- 采访预约 -->
+    <string name="appointment_title">Book an interview</string>
+    <string name="appointment_detail_title">Your bookings</string>
+    <string name="appointment_text">Book</string>
+    <string name="appointment_in">Booking</string>
+    <!-- 我的足迹 -->
+    <string name="my_tracks_title">My footprint</string>
+    <!-- 补充个人信息 toast -->
+    <string name="finish_you_personal_info">Please fill in your name first</string>
+    <!-- 大会资料 -->
+    <string name="meetingdatas_title">Conference materials</string>
+    <!-- 媒体资料 -->
+    <string name="media_datas_title">Media info</string>
+    <!-- dialog提示语 -->
+    <string name="dialog_follow_content">Follow the exibitor before making a comment</string>
+    <string name="dialog_appointment_content">Book the exhibitor before making a comment</string>
+    <string name="Forcedtologoff">Your account has been logged in on another device,  current log-in was kicked out</string>
+    <string name="error_hint">Your account has been logged in on another device,  current log-in was kicked out</string>
+    <!-- 媒体相关 -->
+    <string name="mdia_interaction">Media interaction</string>
+    <string name="mediainter_detail">Media details</string>
+    <!-- 翻译相关 -->
+    <string name="translate_tv">Translation</string>
+    <string name="load_error">Loading Error!</string>
+    <string name="guanzhu_success">Following succeed</string>
+    <string name="isLogout">Are you trying to log out?</string>
+    <string name="ExhibitNavigation">Exhibition hall guide</string>
+    <string name="all_schedule">All Agenda</string>
+    <string name="personal_schedule">Personal agenda</string>
+    <string name="schedule_time">Time / </string>
+    <string name="offline_mode">Offline mode</string>
+    <string name="sign_in">Confirmed signing in?</string>
+    <string name="booth_number">(Exhibition) Booth No.</string>
+    <string name="login_error_hint">Invalid username or password</string>
+    <string name="exhibitor_list_title">Exhibitors List</string>
+    <string name="to">To</string>
+    <string name="am">Morning</string>
+    <string name="pm">Afternoon</string>
+    <string name="cert6">Valid ID card number (last 6 digits)</string>
+    <string name="ticketId">E-ticket number</string>
+    <string name="ticket_commit">Submit</string>
+    <string name="name_cant_null">Name must not be empty</string>
+    <string name="tel_cant_null">Contact number must not be empty</string>
+    <string name="input_corrent_tel">Please enter your valid contact number</string>
+    <string name="cert6_cant_null">ID card number (last 6 digits) must not be empty</string>
+    <string name="cert6_should_complete">Please enter the last 6 digits of your ID card number</string>
+    <string name="ticketid_cant_null">E-ticket number must not be empty</string>
+    <string name="name_has_special">Name must not contain any special characters</string>
+    <string name="ticket_has_special">E-ticket number must not contain any special characters</string>
+    <string name="tel">Contact number</string>
+    <string name="Eticket_binding">Link your E-ticket</string>
+    <string name="choose_document_type">Choose document type</string>
+    <string name="Navigation_path">Navigation path</string>
+    <string name="industry">Industry:</string>
+    <string name="address">Address:</string>
+    <string name="url_tv">Website:</string>
+    <string name="offline_toast">Choose the offline mode and you are able to access the agenda and exhibitor info without Internet connections</string>
+    <string name="start_offline_mode">Turn on</string>
+    <string name="close_offline_mode">Turn off</string>
+    <string name="eticket_bing_success">E-ticket number is linked up now</string>
+    <string name="last6">(last 6 digits)</string>
+    <string name="the_scene_service_telephone">Onsite service call</string>
+    <string name="ticket_consultation">Ticket service</string>
+    <string name="the_food_hygiene">Food safety complaint hotline</string>
+    <string name="on_site_medical_care">Onsite first-aid</string>
+    <string name="security_alarm">Security alarm</string>
+    <string name="professional_audience">Professional service for audience</string>
+    <string name="consulting_the_reception">Service and Reception</string>
+    <string name="fire_alarm">Fire alarm</string>
+    <string name="convention_and_exhibition_center_complaints">Exhibition centre complaint hotline</string>
+    <string name="language_tag">Language</string>
+    <!-- 全部栏目 -->
+    <string name="notice_center">Notice center</string>
+    <string name="guide">Guide</string>
+    <string name="conference_info">Conference Info</string>
+    <string name="highlights_recommendations">Bright spot</string>
+    <string name="site_service_telephone">Service telephone</string>
+    <string name="my_followings">My followings</string>
+    <string name="conference_file">Conference file</string>
+    <string name="my_footprint">My footprint</string>
+    <string name="my_audience">My audience</string>
+    <string name="conference_comments">Conference comments</string>
+    <string name="service_dispatch">Service dispatch</string>
+    <string name="guest_list">Guest list</string>
+    <string name="conference_statistics">Conference statistics</string>
+    <string name="service_sign_in">Service sign in</string>
+    <string name="address_book">Address book</string>
+    <string name="guest_discussions">Guest discussions</string>
+    <string name="book_an_interview">Book an interview</string>
+    <string name="exhibitor_info">Exhibitor info</string>
+    <string name="media_file">Media file</string>
+    <string name="media_interaction">Media interaction</string>
+    <string name="onLine_mode">Online mode</string>
+    <string name="current">Current</string>
+    <string name="download">Downloading</string>
+    <string name="Version_update">Version update</string>
+    <string name="my_free_ticket">My Ticket</string>
+    
+    <string name="supplementary_information">Add your profile  Complimentary tickets for free!</string>
+    <string name="free_ticket"></string>
+     <string name="network_connection_timeout">Network connection timeout</string>
+</resources>

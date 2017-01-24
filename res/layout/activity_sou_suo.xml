@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F7"
+    tools:context="com.example.gaojiaohui.SouSuoActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#384C67"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+        <TextView
+            android:id="@+id/three_quxiao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/three_edit"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/three_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/three_quxiao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittextkuang"
+            android:drawableLeft="@drawable/zsxq_icon_select_nor"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint=" 请输入搜索内容"
+            android:paddingLeft="10dp" 
+            >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="25dp" >
+
+    <RelativeLayout
+        android:id="@+id/xingcheng_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/icon_xingcheng"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/guest_xingcheng_finish" />
+
+        <TextView
+            android:id="@+id/xingcheng_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="14dp"
+            android:text="2016.9.12 15:32"
+            android:textColor="#609EFB"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/xingcheng_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/xingcheng_time"
+            android:layout_toRightOf="@id/icon_xingcheng"
+            android:minHeight="35dp"
+            android:text="下榻酒店下榻酒店下榻酒店下榻酒店下榻酒店下榻酒店"
+            android:textColor="#717172"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/xingcheng_name"
+            android:layout_below="@id/icon_xingcheng"
+            android:layout_marginLeft="10dp"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 通知栏颜色 -->
+        <item name="colorPrimary">#384c67</item>
+        <item name="colorPrimaryDark">#384c67</item>
+        <item name="colorAccent">#384c67</item>
+    </style>
+    
+    <!-- 自定义Ratingbar主题(蓝白色星星)(观众互动-我的关注 列表) -->
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/ratingbar_app_shop_list</item>
+
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">36dp</item>
+
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:maxHeight">36dp</item>
+
+        <!-- 是否不允许滑动交互 -->
+        <item name="android:isIndicator">true</item>
+    </style>
+    <!-- 自定义Ratingbar主题(大的蓝白色星星)(观众互动-观众详情 ) -->
+    <style name="roomRatingBarBig" parent="@android:style/Widget.RatingBar">
+
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/ratingbar_big</item>
+
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">36dp</item>
+
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:maxHeight">36dp</item>
+
+        <!-- 是否不允许滑动交互 -->
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

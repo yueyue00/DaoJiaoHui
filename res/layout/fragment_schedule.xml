@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fragment_schedule_tab" />
+
+    <include
+        android:id="@+id/net_layout"
+        layout="@layout/custom_net_less"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="62dp" >
+        </android.support.v7.widget.RecyclerView>
+
+        <ExpandableListView
+            android:id="@+id/expendlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.gj.gaojiaohui.activity.PersonalDataActivity" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center"
+            android:text="@string/person_name"
+            android:textColor="@color/zhanshang_title"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/edit_person_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/person_btn_edit_nor" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/edit_person_name"
+            android:background="@color/shu_view" />
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view1"
+            android:layout_toRightOf="@+id/person_name"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="right"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/neirong"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center"
+            android:text="@string/contact_information"
+            android:textColor="@color/zhanshang_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/contact_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView4"
+            android:gravity="center"
+            android:text="@string/person_email"
+            android:textColor="@color/zhanshang_title"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/edit_person_email"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/person_btn_edit_nor" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/edit_person_email"
+            android:background="@color/shu_view" />
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view2"
+            android:layout_toRightOf="@+id/emailTv"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="right"
+            android:inputType="textWebEmailAddress"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:textColor="@color/neirong"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/companyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView6"
+            android:gravity="center"
+            android:text="@string/person_company"
+            android:textColor="@color/zhanshang_title"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/edit_person_company"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/person_btn_edit_nor" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/edit_person_company"
+            android:background="@color/shu_view" />
+
+        <EditText
+            android:id="@+id/editcompany"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view5"
+            android:layout_toRightOf="@+id/companyTv"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:gravity="right"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/neirong"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/positionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView5"
+            android:gravity="center"
+            android:text="@string/person_post"
+            android:textColor="@color/zhanshang_title"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/edit_person_post"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/person_btn_edit_nor" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/edit_person_post"
+            android:background="@color/shu_view" />
+
+        <EditText
+            android:id="@+id/editpost"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view4"
+            android:layout_toRightOf="@+id/positionTv"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="right"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/neirong"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/view" />
+    
+    
+
+</LinearLayout>

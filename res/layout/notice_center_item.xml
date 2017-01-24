@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/notice_center_item_icon_img"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pic_icon_dahui_nitoce_nor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/notice_center_item_icon_img"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp" >
+
+        <TextView
+            android:id="@+id/notice_center_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#717172"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/notice_center_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_center_item_title"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#609EFB"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/notice_center_item_icon_img"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="8dp"
+        android:background="#C8C7CC" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tab_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#363C44"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_main"
+            style="@style/tab_rb_style"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_home_home"
+            android:text="@string/home_main"
+            android:textColor="@drawable/selector_home_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/tab_schedule"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/selector_home_schedule"
+            android:text="@string/home_schedule"
+            android:textColor="@drawable/selector_home_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/tab_column"
+            style="@style/tab_rb_style"
+            android:text="占个位置"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/tab_exhibit"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/selector_home_exhibit"
+            android:text="@string/home_exhibit"
+            android:textColor="@drawable/selector_home_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/tab_setting"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/selector_home_my"
+            android:text="@string/home_my"
+            android:textColor="@drawable/selector_home_text_color"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/column_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/home_btn_menu_nor"
+        android:elevation="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4" >
+
+    <com.gj.gaojiaohui.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.gj.gaojiaohui.view.PullableScrollView
+            android:id="@+id/homepage_pullableScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/homepage_top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_img_profile_bg" />
+
+                <View
+                    android:id="@+id/home_img_top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-200dp"
+                    android:background="@drawable/home_img_top_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-100dp"
+                    android:background="#00000000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/home_title_contain_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <!-- 大会通知 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <View
+                            android:id="@+id/view_point"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/shape_tongzhi_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/view_point"
+                            android:text="@string/home_tongzhi"
+                            android:textColor="#2A2D2E"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/home_tongzhi_more_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="11px"
+                            android:padding="5dp"
+                            android:text="@string/home_more"
+                            android:textColor="#A0A0A0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="8dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/home_tongzhi_more_tv"
+                            android:src="@drawable/home_icon_more_nor" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="22dp"
+                        android:background="#C8C7CC" />
+
+                    <RelativeLayout
+                        android:id="@+id/home_tongzhi_rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_item_bg_color"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:id="@+id/home_tongzhi_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#717172"
+                            android:textSize="14sp"
+                            android:width="280dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="22dp"
+                        android:background="#C8C7CC" />
+
+                    <RelativeLayout
+                        android:id="@+id/home_tongzhi_rl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_item_bg_color"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:id="@+id/home_tongzhi_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#717172"
+                            android:textSize="14sp"
+                            android:width="300dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 亮点推荐 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <View
+                            android:id="@+id/view_point2"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/shape_liangdian_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/view_point2"
+                            android:text="@string/home_liangdian"
+                            android:textColor="#2A2D2E"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/home_liangdian_more_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="11px"
+                            android:padding="5dp"
+                            android:text="@string/home_more"
+                            android:textColor="#A0A0A0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="8dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/home_liangdian_more_tv"
+                            android:src="@drawable/home_icon_more_nor" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="22dp"
+                        android:background="#C8C7CC" />
+
+                    <RelativeLayout
+                        android:id="@+id/notifiction_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:clickable="true" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp" >
+
+                            <ImageView
+                                android:id="@+id/notifiction_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_img_default_nor" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/notifiction_img"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:background="@drawable/home_img_top_bg" />
+
+                            <TextView
+                                android:id="@+id/notifiction_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/notifiction_img"
+                                android:layout_alignLeft="@+id/notifiction_img"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/home_liangdian"
+                                android:textColor="#ffffff"
+                                android:visibility="gone"
+                                android:textSize="22sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 展馆导航 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <View
+                            android:id="@+id/navigation_view_point2"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/shape_daohang_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/navigation_view_point2"
+                            android:text="@string/home_navigation"
+                            android:textColor="#2A2D2E"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="22dp"
+                        android:background="#C8C7CC" />
+
+                    <RelativeLayout
+                        android:id="@+id/navigation_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:clickable="true" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp" >
+
+                            <ImageView
+                                android:id="@+id/navigation_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_img_default_nor" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/navigation_img"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:background="@drawable/home_img_top_bg" />
+
+                            <TextView
+                                android:id="@+id/navigation_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/navigation_img"
+                                android:layout_alignLeft="@+id/navigation_img"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/home_navigation"
+                                android:textColor="#ffffff"
+                                android:visibility="gone"
+                                android:textSize="22sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 大会资讯 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <View
+                            android:id="@+id/view_point_info"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/shape_zixun_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/view_point_info"
+                            android:text="@string/home_zixun"
+                            android:textColor="#2A2D2E"
+                            android:textSize="16sp" />
+                        
+ 
+                        <TextView
+                            android:id="@+id/home_zixun_more_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="11px"
+                            android:padding="5dp"
+                            android:text="@string/home_more"
+                            android:textColor="#A0A0A0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="8dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/home_zixun_more_tv"
+                            android:src="@drawable/home_icon_more_nor" />                       
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="22dp"
+                        android:background="#C8C7CC" />
+
+                    <ListView
+                        android:id="@+id/mlistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:dividerHeight="0dp"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:scrollbars="none"
+                        android:smoothScrollbar="true" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.gj.gaojiaohui.view.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.gj.gaojiaohui.view.PullToRefreshLayout>
+
+    <include
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/home_title" />
+
+    <ImageView
+        android:id="@+id/home_loading_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0"
+        android:src="@drawable/loading" >
+    </ImageView>
+
+    <include
+        android:id="@+id/home_net_less"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/custom_net_less"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

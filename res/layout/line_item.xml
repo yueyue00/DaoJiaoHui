@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/point_start_rl"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view" />
+
+        <ImageView
+            android:id="@+id/start_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_begin_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/point_middle_rl"
+        android:layout_width="20dp"
+        android:layout_height="60dp "
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view" />
+
+        <ImageView
+            android:id="@+id/nor_image"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hdxq_img_shenhezhong_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/point_end_rl"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view" />
+
+        <ImageView
+            android:id="@+id/end_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_end_nor" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/route_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:text="大会路程详情"
+        android:textColor="@color/neirong"
+        android:textSize="15sp" />
+
+</RelativeLayout>

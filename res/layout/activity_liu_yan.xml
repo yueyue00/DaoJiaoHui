@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.gaojiaohui.LiuYanActivity" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <EditText
+        android:id="@+id/edit_liuyan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittextkuang"
+        android:gravity="top"
+        android:hint="@string/liuyan_hint"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/liuyan_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/liuyan_commit"
+        android:textColor="#fff" />
+
+</LinearLayout>

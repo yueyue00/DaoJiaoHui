@@ -1,0 +1,409 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.gaojiaohui.HuoDongParticulars" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rl_huodong_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:id="@+id/huodong_xiangqing_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/zhanshang_title"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/activity_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/time"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/xq_huodong_baoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/hdxq_btn_baoming_nor"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xq_huodong_neirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/neirong"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/xq_huodong_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/faqibaoming"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/activity_apply"
+                    android:textColor="@drawable/shenhe_text" />
+
+                <TextView
+                    android:id="@+id/baomingshenhe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/activity_audit"
+                    android:textColor="@drawable/shenhe_text" />
+
+                <TextView
+                    android:id="@+id/shenhetongguo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/activity_pass"
+                    android:textColor="@drawable/shenhe_text" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/hdxq_icon_fqbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/hdxq_icon_fqbm_nor" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_updown"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/hdxq_icon_fqbm"
+                    android:max="100"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="5dp"
+                    android:progressDrawable="@drawable/progressbar_drawable" />
+
+                <ImageView
+                    android:id="@+id/yuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/progressbar_updown"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hdxq_img_shenhezhong_nor" />
+
+                <ImageView
+                    android:id="@+id/yuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hdxq_img_shenhezhong_nor" />
+
+                <ImageView
+                    android:id="@+id/yuan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/progressbar_updown"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/hdxq_img_shenhezhong_nor" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F4F5F6" />
+
+            <RelativeLayout
+                android:id="@+id/huodong_weizhi_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_item_bg_color" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_huodong_dizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_icon_title_nor" />
+
+                    <TextView
+                        android:id="@+id/huodong_xiangqing_dizhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="center"
+                        android:text="@string/activity_place"
+                        android:textColor="@color/zhanshang_title"
+                        android:textSize="17sp"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/zhanshang_weizhi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/convention_btn_place_nor" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="0.5dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/zhanshang_weizhi"
+                        android:background="@color/shu_view" />
+
+                    <TextView
+                        android:id="@+id/huichang_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/view1"
+                        android:layout_toRightOf="@id/huodong_xiangqing_dizhi"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/neirong" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/view" />
+
+            <RelativeLayout
+                android:id="@+id/huodong_pingzheng_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_item_bg_color"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_huodong_pingzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_icon_title_nor" />
+
+                    <TextView
+                        android:id="@+id/huodong_xiangqing_pingzheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:gravity="center"
+                        android:text="@string/activity_credentials"
+                        android:textColor="@color/zhanshang_title"
+                        android:textSize="17sp"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/zhanshang_pingzheng"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/credentials_icon_nor" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/zhanshang_pingzheng"
+                        android:background="@color/shu_view" />
+
+                    <TextView
+                        android:id="@+id/huodong_pingzheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/view2"
+                        android:textColor="@color/neirong" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/view"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/convention_time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/convention_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_icon_title_nor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/convention_time"
+                        android:textColor="@color/zhanshang_title"
+                        android:textSize="17sp"
+                        android:typeface="sans" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/convention_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/convention_time_ll"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-4dp"
+                    android:padding="7dp"
+                    android:src="@drawable/convention_icon_time_nor" />
+
+                <View
+                    android:id="@+id/convention_view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="12dp"
+                    android:layout_alignTop="@id/convention_time_ll"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5.5dp"
+                    android:layout_toLeftOf="@id/convention_image"
+                    android:background="@color/shu_view" />
+
+                <TextView
+                    android:id="@+id/convention_time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/convention_time_ll"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/convention_view"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/convention_time_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/convention_time_start"
+                    android:layout_below="@id/convention_time_ll"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/view" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

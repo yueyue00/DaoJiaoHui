@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#384C67" >
+
+        <RadioGroup
+            android:id="@+id/dahuinavi_rg"
+            android:layout_width="240dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_dahuinavi"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dahuinavi_leftbg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/conference_navi"
+                android:textAlignment="viewEnd"
+                android:textColor="@drawable/selector_huiyinavi_textcolor"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_zhanguannavi"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_huiyinavi_rightbg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/exhibition_hall_navi"
+                android:textAlignment="viewEnd"
+                android:textColor="@drawable/selector_huiyinavi_textcolor"
+                android:textSize="14dp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/dahuinavi_fanhui"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/home_btn_back_nor" />
+
+        <ImageView
+            android:id="@+id/dahuinavi_erweima"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/home_icon_scan_nor" />
+    </RelativeLayout>
+
+    <com.gj.gaojiaohui.view.NoScrollViewPager
+        android:id="@+id/dahuinavi_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+</LinearLayout>

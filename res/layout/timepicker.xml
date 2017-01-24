@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker11"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        android:id="@+id/timePickerTitleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#f2f2f2"
+        android:visibility="gone"
+        >
+     <Button 
+         android:id="@+id/timePickerCencleBtn"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00ffffff"
+         android:textColor="@drawable/timepicker_color_selector"
+         android:visibility="invisible"
+         android:text="取消"   ></Button>
+     <TextView 
+         android:id="@+id/timePickerTextTv"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="22sp"
+          android:textColor="#0f80dc"
+          android:gravity="center"
+         android:text="1992-11-01"></TextView>
+     <Button 
+         android:id="@+id/timePickerConfirmBtn"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#00ffffff"
+          android:visibility="invisible"
+         android:textColor="@drawable/timepicker_color_selector"
+         android:text="确定"></Button>
+    </LinearLayout>
+    <View
+        android:background="#a8a8a8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    
+<LinearLayout
+     android:id="@+id/timePicker1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    
+     <com.gj.gaojiaohui.view.WheelView
+         android:id="@+id/year"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+
+     <com.gj.gaojiaohui.view.WheelView
+         android:id="@+id/month"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+
+     <com.gj.gaojiaohui.view.WheelView
+         android:id="@+id/day"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+     
+     <com.gj.gaojiaohui.view.WheelView
+         android:id="@+id/hour"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+     
+     <com.gj.gaojiaohui.view.WheelView
+         android:id="@+id/min"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tongzhi_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="慧点科技技术有限公司资讯"
+            android:textColor="#2A2D2E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tongzhi_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tongzhi_detail_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="2016.9.12 15:32:22"
+            android:textColor="#609EFB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tongzhi_detail_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tongzhi_detail_time"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="北京慧点科技有限公司（简称慧点科技）于1998年8月创立，是以GRC为理念的管理软件与服务提供商公司成立以来，秉承“自强不息、厚德载物、创新协作、脚踏实地”的精神为近千家集团企业和政府客户提供了包括软件产品、应用开发、管理咨询和系统集成在内的特色服务。"
+            android:textColor="#717172"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tongzhi_detail_contain"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+</LinearLayout>

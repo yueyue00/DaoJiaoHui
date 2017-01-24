@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#384c67"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/add_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/add"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/all_schedule_layout"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_seg_left"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_schedule"
+                android:textColor="@drawable/selector_schedul_switch_tv"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sample_schedule_layout"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-1dp"
+            android:background="@drawable/shape_seg_right"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_schedule"
+                android:textColor="@drawable/selector_schedul_switch_tv"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="23dp"
+        android:src="@drawable/pic_schedule_search" />
+
+</RelativeLayout>

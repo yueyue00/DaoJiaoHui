@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#637186" />
+
+        <ImageView
+            android:id="@+id/register_phone_img"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_phone_nor" />
+
+        <TextView
+            android:id="@+id/register_send_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/login_send_validation_code"
+            android:textColor="#609EFB"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/register_phone_v_line"
+            android:layout_width="1px"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/register_send_code_tv"
+            android:background="#8E96A4" />
+
+        <EditText
+            android:id="@+id/register_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/register_phone_v_line"
+            android:layout_toRightOf="@+id/register_phone_img"
+            android:background="#00000000"
+            android:cursorVisible="true"
+            android:hint="@string/login_phone_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#ffffff"
+            android:textColorHint="#637186"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#637186" />
+
+        <ImageView
+            android:id="@+id/register_validation_img"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_validation_nor" />
+
+        <EditText
+            android:id="@+id/register_validation_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/register_validation_img"
+            android:background="#00000000"
+            android:cursorVisible="true"
+            android:hint="@string/login_validation_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#ffffff"
+            android:textColorHint="#637186"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#637186" />
+
+        <ImageView
+            android:id="@+id/register_img"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_password_nor" />
+
+        <EditText
+            android:id="@+id/register_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/register_img"
+            android:background="#00000000"
+            android:cursorVisible="true"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="#ffffff"
+            android:textColorHint="#637186"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_login_button_bg"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

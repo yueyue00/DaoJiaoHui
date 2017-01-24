@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.gj.gaojiaohui.activity.GeneralStatisticsActivity" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <TextView
+        android:id="@+id/exhibits_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="11dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#2A2D2E"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/exhibits_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/exhibits_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#717172"
+        android:textSize="14sp" />
+
+</LinearLayout>

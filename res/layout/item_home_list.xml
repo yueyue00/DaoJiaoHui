@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_item_bg_color"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_home_list_img"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_img_zixun_nor" />
+
+    <TextView
+        android:id="@+id/item_home_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_home_list_img"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/item_home_list_img"
+        android:text="中国技术交易会"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#2A2D2E"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_home_list_contain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_home_list_img"
+        android:layout_alignLeft="@+id/item_home_list_title"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:maxWidth="300dp"
+        android:layout_marginRight="15dp"
+        android:text="二十余位重量级嘉宾将登"
+        android:textColor="#717172"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/item_home_list_img"
+        android:background="#C8C7CC"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="22dp" />
+
+</RelativeLayout>

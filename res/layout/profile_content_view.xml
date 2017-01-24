@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <!-- 大会通知 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:id="@+id/view_point"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/view_point"
+                android:text="大会通知"
+                android:textColor="#2A2D2E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/home_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:padding="5dp"
+                android:text="更多"
+                android:textColor="#A0A0A0"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/home_more_tv"
+                android:src="@drawable/home_icon_more_nor" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="#C8C7CC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="2016年高交会创客赛及创客展项目招募"
+                android:textColor="#717172"
+                android:textSize="14sp"
+                android:width="280dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="#C8C7CC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="二十余位重量级嘉宾将登临第十八届高交会中国高新 技术论坛"
+                android:textColor="#717172"
+                android:textSize="14sp"
+                android:width="300dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="#C8C7CC" />
+    </LinearLayout>
+
+    <!-- 亮点推荐 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:id="@+id/view_point2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/view_point2"
+                android:text="亮点推荐"
+                android:textColor="#2A2D2E"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/home_more_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:padding="5dp"
+                android:text="更多"
+                android:textColor="#A0A0A0"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/home_more_tv2"
+                android:src="@drawable/home_icon_more_nor" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="#C8C7CC" />
+
+        <RelativeLayout
+            android:id="@+id/notifiction_rl"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/notifiction_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_img_default_nor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notifiction_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/notifiction_img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_img_default_nor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:id="@+id/view_point_info"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/view_point_info"
+                android:text="大会资讯"
+                android:textColor="#2A2D2E"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="#C8C7CC" />
+
+        <ListView
+            android:id="@+id/mlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

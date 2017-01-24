@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/meeting_news_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/meeting_news_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="栏目类别2"
+            android:textColor="@drawable/selector_meeting_news_tv" 
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/meeting_blue_line"
+            android:layout_width="81dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#609EFB"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/meeting_gray_line"
+            android:layout_width="107dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#f4f5f6"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="22dp"
+        android:layout_alignRight="@id/meeting_news_layout"
+        android:layout_centerVertical="true"
+        android:background="#747474" />
+
+</RelativeLayout>

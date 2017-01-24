@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+   
+    >
+    <ImageView 
+        android:id="@+id/vipinfo_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/a_huiyiricheng_guesticon"
+         android:layout_marginRight="20dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="17dp"
+        />
+   
+    <LinearLayout 
+        android:id="@+id/vipinfo_lin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        >
+    <TextView 
+        android:id="@+id/vipinfo_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李彪"
+        android:textColor="@color/left_txt"
+        android:textSize="20sp"
+       />
+    <View 
+        android:layout_width="30dp"
+        android:layout_height="1.5dp"
+        android:background="@color/cultural_location_color"
+        android:layout_marginTop="3dp"/>
+    <TextView 
+        android:id="@+id/vipinfo_tv_workplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/right_color"
+        android:textSize="16sp"
+        android:text="北京慧点科技有限公司"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        />
+    <TextView 
+        android:id="@+id/vipinfo_tv_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/right_color"
+        android:textSize="16sp"
+        android:text="项目总监"
+        />
+    </LinearLayout>
+     
+</RelativeLayout>

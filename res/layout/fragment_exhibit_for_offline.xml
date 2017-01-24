@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/exhbit_offline_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#384C67" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/three_zhanshang_offline"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:background="@drawable/shape_seg_left"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exhibit_exhibitors"
+                    android:textColor="@drawable/selector_schedul_switch_tv"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/three_huodong_offline"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:background="@drawable/shape_seg_right"
+                android:gravity="center"
+                android:layout_marginLeft="-1dp"
+            	android:layout_marginRight="-1dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exhibit_activity"
+                    android:textColor="@drawable/selector_schedul_switch_tv"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/three_sousuo_offline"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/pic_schedule_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three_rl_offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+    </RelativeLayout>
+  <include layout="@layout/custom_net_less"/>
+</LinearLayout>

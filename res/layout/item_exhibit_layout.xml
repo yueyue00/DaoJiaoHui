@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_item_bg_color" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/exhibit_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="@string/exhibit_info"
+            android:textColor="#2A2D2E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/exhibit_detail_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/exhibit_detail_tv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="北京慧点科技有限公司"
+            android:textColor="#717172"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="45dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/exhibit_detail_detail_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:src="@drawable/selector_exhibit_tuijian" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="#C8C7CC" />
+    </RelativeLayout>
+
+</RelativeLayout>

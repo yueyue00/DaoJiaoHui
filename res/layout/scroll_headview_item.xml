@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:minHeight="225dp" >
+
+    <ImageView
+        android:id="@+id/scroll_headview_item_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_img_default_nor" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/home_img_top_bg" />
+
+    <TextView
+        android:id="@+id/scroll_headview_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scroll_headview_item_icon"
+        android:layout_alignLeft="@+id/scroll_headview_item_icon"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="展馆导航"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</RelativeLayout>

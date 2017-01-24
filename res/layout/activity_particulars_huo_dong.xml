@@ -1,0 +1,349 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.gaojiaohui.HuoDongParticulars1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#384C67" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="活动详情"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/hdxq_fanhui1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/home_btn_back_nor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_huodong_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/huodong_xiangqing_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="活动标题"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/activity_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="时间"
+            android:textColor="@color/time"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/xq_huodong_baoming1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/hdxq_btn_baoming_nor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xq_huodong_neirong1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="北京慧点科技有限公司1998年8月创立，是以GRC为理念的管理软件与服务提供商。高科技产品交易会将在深圳举行。"
+        android:textColor="@color/neirong"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/faqibaoming1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/activity_apply"
+            android:textColor="@drawable/shenhe_text" />
+
+        <TextView
+            android:id="@+id/baomingshenhe1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/activity_audit"
+            android:textColor="@drawable/shenhe_text" />
+
+        <TextView
+            android:id="@+id/shenhetongguo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/activity_pass"
+            android:textColor="@drawable/shenhe_text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <ImageView
+            android:id="@+id/hdxq_icon_fqbm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/hdxq_icon_fqbm_nor" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_updown1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/hdxq_icon_fqbm1"
+            android:max="100"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/progressbar_drawable" />
+
+        <ImageView
+            android:id="@+id/yuan1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/progressbar_updown1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/hdxq_img_shenhetg_nor" />
+
+        <ImageView
+            android:id="@+id/yuan2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/hdxq_img_shenhetg_nor" />
+
+        <ImageView
+            android:id="@+id/yuan3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/progressbar_updown1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/hdxq_img_shenhezhong_nor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#F3F4F5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_huodong_dizhi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/huodong_xiangqing_dizhi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center"
+            android:text="@string/activity_place"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/zhanshang_weizhi1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/convention_btn_place_nor" />
+
+        <View
+            android:id="@+id/view1_1"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/zhanshang_weizhi1"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/huichang_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view1_1"
+            android:text="第一会场"
+            android:textColor="@color/neirong" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_huodong_pingzheng1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView3_1"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/huodong_xiangqing_pingzheng1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3_1"
+            android:gravity="center"
+            android:text="@string/activity_credentials"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/zhanshang_pingzheng1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/credentials_icon_nor" />
+
+        <View
+            android:id="@+id/view2_1"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/zhanshang_pingzheng1"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/huodong_pingzheng1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view2_1"
+            android:text="参加"
+            android:textColor="@color/neirong" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_huodong_jieshao1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView4_1"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_icon_title_nor" />
+
+        <TextView
+            android:id="@+id/huodong_xiangqing_jieshao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView4_1"
+            android:gravity="center"
+            android:text="@string/activity_exhibitors_introduce"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/zhanshang_jieshao1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="北京慧点科技有限公司（简称慧点科技）于1998年8月创立，是以GRC为理念的管理软件与服务提供商。公司成立以来，秉承“自强不息、厚德载物、创新协作、脚踏实地”的精神为近千家集团企业和政府客户提供了包括软件产品、应用开发、管理咨询和系统集成在内的特色服务。"
+        android:textColor="@color/neirong"
+        android:textSize="15sp" />
+
+</LinearLayout>

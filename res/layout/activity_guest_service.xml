@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/guestService_hotel_info_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp" >
+
+        <View
+            android:id="@+id/view_point_hotelInfo"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/view_square_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/view_point_hotelInfo"
+            android:text="@string/hotel_information"
+            android:textColor="#2A2D2E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/guestService_hotelInfo_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/guestserviec_icon_hotel_nor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="22dp"
+        android:background="#C8C7CC" />
+
+    <RelativeLayout
+        android:id="@+id/guestService_hotel_navi_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp" >
+
+        <View
+            android:id="@+id/view_point_hotelNavi"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/view_square_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/view_point_hotelNavi"
+            android:text="@string/hotel_navigation"
+            android:textColor="#2A2D2E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/guestService_hotelNavi_iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/pic_btn_local_nor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="22dp"
+        android:background="#C8C7CC" />
+
+    <RelativeLayout
+        android:id="@+id/guestService_hall_navi_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp" >
+
+        <View
+            android:id="@+id/view_point_hallNavi"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/view_square_shape" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/view_point_hallNavi"
+            android:text="@string/hall_navigation"
+            android:textColor="#2A2D2E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/guestService_hallNavi_iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/pic_btn_local_nor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="22dp"
+        android:background="#C8C7CC" />
+
+    <RelativeLayout
+        android:id="@+id/guestService_exclusive_member_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp" >
+
+        <View
+            android:id="@+id/view_point_exclusive"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/view_square_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/view_point_exclusive"
+            android:text="@string/exclusive_service_member"
+            android:textColor="#2A2D2E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/guestService_exclusive_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/guestservice_icon_servicemember_nor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="22dp"
+        android:background="#C8C7CC" />
+
+    <Button
+        android:id="@+id/oneKey_call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_onekey_call"
+        android:gravity="center"
+        android:text="@string/onekey_call"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

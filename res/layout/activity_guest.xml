@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.gaojiaohui.ExhibitorsActivity" >
+
+    <include layout="@layout/custom_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittextkuang"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/activity_convention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/zhanshang_title"
+            android:textSize="17sp" />
+
+        <ScrollView
+            android:id="@+id/guest_scrollow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/convention_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="@color/neirong"
+                android:textSize="15sp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/activity_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_icon_title_nor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/my_credentials"
+                android:textColor="@color/zhanshang_title"
+                android:textSize="17sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/credentials_image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:src="@drawable/credentials_icon_nor" />
+
+        <View
+            android:id="@+id/credentials_view"
+            android:layout_width="1dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/credentials_image"
+            android:background="@color/view" />
+
+        <TextView
+            android:id="@+id/activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/credentials_view"
+            android:text="@string/have_to_attend"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/view"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/activity_time_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/activity_time_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_icon_title_nor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/activity_time"
+                android:textColor="@color/zhanshang_title"
+                android:textSize="17sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/convention_image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/activity_time_ll"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1.5dp"
+            android:padding="2dp"
+            android:src="@drawable/convention_icon_time_nor" />
+
+        <View
+            android:id="@+id/convention_view"
+            android:layout_width="1px"
+            android:layout_height="11dp"
+            android:layout_alignTop="@id/activity_time_ll"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5.5dp"
+            android:layout_toLeftOf="@id/convention_image"
+            android:background="#363C44" />
+
+        <TextView
+            android:id="@+id/activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/activity_time_ll"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/convention_view"
+            android:text="2016-08-21 12:00:00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/activity_endTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/activity_time"
+            android:layout_below="@id/activity_time_ll"
+            android:text="2016-08-21 12:00:00"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/activity_place_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/convention_place_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_icon_title_nor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/activity_place"
+                android:textColor="@color/zhanshang_title"
+                android:textSize="17sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_place_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/convention_btn_place_nor" />
+
+        <View
+            android:id="@+id/activity_place_view"
+            android:layout_width="1px"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/activity_place_image"
+            android:background="#363C44" />
+
+        <TextView
+            android:id="@+id/activity_place"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/activity_place_view"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/exhibitors_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/exhibitors_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_icon_title_nor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/guest"
+                android:textColor="@color/zhanshang_title"
+                android:textSize="17sp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/guest_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </GridView>
+
+</LinearLayout>
